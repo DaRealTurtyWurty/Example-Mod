@@ -1,5 +1,6 @@
 package dev.turtywurty.examplemod;
 
+import dev.turtywurty.examplemod.init.EntityTypeInit;
 import dev.turtywurty.examplemod.init.ItemInit;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -82,5 +83,6 @@ public class ExampleMod {
 
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         ItemInit.ITEMS.register(bus);
+        EntityTypeInit.ENTITY_TYPES.register(bus);
     }
 }
